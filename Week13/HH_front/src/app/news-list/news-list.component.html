@@ -1,0 +1,4 @@
+<div *ngFor="let company of companies">
+  <a [routerLink]="'/company/' + company.id">{{ company.name }}</a>
+  <button (click)="deleteCompany(company.id)">Delete</button>
+</div>
